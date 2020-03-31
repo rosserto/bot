@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         New10
+// @name         New0104
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
@@ -10,21 +10,21 @@
 // ==/UserScript==
 
 let googleInput = document.getElementsByName('text')[0];
-let btnK = document.getElementsByName('btnK')[1];
+let yndx=document.getElementsByClassName("button__text")[0];
 let searchWord = 'Гобой';
 let i = 0;
 let links = document.links;
 
-if (btnK!=undefined){
+if (yndx!=undefined){
     let timerId = setInterval(()=>{
-        googleInput.value += searchWord[i];
+         yandexInput.value+=searchWord[i];
         i++;
         if (i==searchWord.length) {
             clearInterval(timerId);
-            btnK.click();}
+              yndx.click();}
     },500);
 }
-else if (location.hostname == "www.yandex.ru"){
+else if (location.hostname == "yandex.ru"){
     for (let i=0; i<links.length; i++){
         if (links[i].href.indexOf('xn----7sbab5aqcbiddtdj1e1g.xn--p1ai')!=-1){
             links[i].click();
@@ -34,7 +34,7 @@ else if (location.hostname == "www.yandex.ru"){
 }
 else {
     setInterval(()=>{
-        if (getRandom(0,100)<30) location.href = "https://www.yandex.ru/";
+        if (getRandom(0,100)<30) location.href = "yandex.ru/";
         let index = getRandom(0, links.length)
         links[index].click();
     },5000);
