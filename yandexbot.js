@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 let googleInput = document.getElementsByName('text')[0];
-let yndx=document.getElementsByClassName("button__text")[0];
+let yndx=document.getElementsByClassName("button__text")[1];
 let searchWord = 'Гобой';
 let i = 0;
 let links = document.links;
