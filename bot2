@@ -10,7 +10,13 @@
 // @grant        none
 // ==/UserScript==
 let googleInput = document.getElementsByName('q')[0];
-let btnK = document.getElementsByName('btnK')[1];
+
+let btn = document.getElementsByClassName("button_theme_websearch")[0];
+let searchWords = ['Гобой','Кларнет','Саксофон','Флейта','Валторна','Фагот'];
+let searchWord = searchWords[getRandom(0,searchWords.length)];
+
+
+
 let searchWords= ['Гобой','Кларнет','Саксофон','Флейта','Валторна','Фагот'];
 let searchWord = searchWords[getRandom(0,searchWords.length)];
 let i = 0;
