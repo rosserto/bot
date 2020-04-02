@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         New Userscript3333
+// @name         New Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
@@ -34,11 +34,15 @@ else if (location.hostname == "yandex.ru"){
             break;
         }
     }
-    if (flag){
-        setTimeout(()=>{
-            if(document.querySelector('a[aria-label]').__1585768023692==!"uniq499")
-                document.querySelector('a [aria-label="Следующая страница"]').click();
-},3800);
+    if(flag){
+       setTimeout(()=>{
+        if (document.querySelector('span[aria-label="Текущая Страница 7"]').innerText<7){
+        document.querySelector('a[aria-label="Следующая страница"]').click();
+        }
+        else{
+            location.href = "https://yandex.ru/";
+        }
+    },2000);
     }
 }
 
