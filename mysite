@@ -29,7 +29,7 @@
         width:30rem;
         border:4px solid white;
         margin:auto;
-        padding:2rem;
+        pagging:2rem;
         color:white;
         font-size:1.2rem;
            }
@@ -146,6 +146,10 @@
      </div>
      
      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab83010fd0d1da2b330580556ba34f0b1d81199ef41e91312b0269945ac6afcb9&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+     
+      <footer class="container my-3 text-center">
+      &copy; 2020 ГБОУ ДПО УЦ "Профессионал"
+    </footer>
      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
