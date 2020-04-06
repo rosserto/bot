@@ -127,12 +127,12 @@
       </div>
         <div class="col-sm-8">
           <h4 class="text-center">Напишите нам</h4>
-          <form action="">
+          <form action="obr_form.php" method="POST">
             <div class="form-group">
-            <input type="text" class="form-control" placeholder="Имя">
+            <input type="text" class="form-control" name="name" placeholder="Имя">
             </div>
             <div class="form-group">
-           <input type="text" class="form-control" placeholder="E-mail">
+           <input type="text" class="form-control" name="email"  placeholder="E-mail">
            </div>
             <div class="form-group">
             <textarea class="form-control" placeholder="Сообщение"></textarea>
